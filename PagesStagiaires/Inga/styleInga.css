@@ -90,6 +90,9 @@ body {
     padding-left: 20px;
     font-size: large;
     font-weight: bold;
+    border-radius: 0px 20px 20px 0px;
+    width: 200px;
+    
 }
 
 .textProfil {

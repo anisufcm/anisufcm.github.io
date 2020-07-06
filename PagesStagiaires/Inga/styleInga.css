@@ -45,13 +45,14 @@ body {
 }
 
 .spanPhoto {
-    margin: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: inline-block;
     border-radius: 50%;
     border: solid 5px;
     border-color: rgb(175, 174, 174);
     width: 154px;
-    height: 90%;
+    height: 85%;
     background-image: url(./Img/photoCV.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -92,7 +93,6 @@ body {
     font-weight: bold;
     border-radius: 0px 20px 20px 0px;
     width: 200px;
-    
 }
 
 .textProfil {
@@ -122,4 +122,50 @@ body {
     text-align: center;
 }
 
-.languesContainer>div {}
+
+.headerDivDroite {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 15px;
+    padding-left: 20px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0px 20px 20px 0px;   
+    max-width: 400px;
+}
+.headerExperiencePro{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(206, 206, 206);
+    color: rgb(80, 80, 80);
+    padding-left: 20px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 0px 30px 30px 0px; 
+    width: 200px;
+}
+.interets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    text-align: center;   
+    justify-items: center;   
+    margin-top: 10px;
+}
+
+.itemInterets {  
+  
+    /* display: inline-block; */
+    border-radius: 50%;
+    border: solid 10px;
+    border-color: rgb(73, 192, 178);
+    width: 60px;
+    height: 60px;
+    /* background-position: center;
+    background-repeat: no-repeat;    */
+}
+
+.itemInterets>img{
+    width: 50px;
+    height: 50px;
+}

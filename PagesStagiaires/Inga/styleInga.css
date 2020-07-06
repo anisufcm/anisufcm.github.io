@@ -1,3 +1,122 @@
-h1{
-    color: gray;
+span {
+    /* border: solid; */
 }
+
+body {
+    padding: 10px 20px;
+}
+
+.colorVert {
+    color: rgb(73, 192, 178);
+}
+
+.bgColorVert {
+    background-color: rgb(73, 192, 178);
+}
+
+.bgColorGris {
+    background-color: rgb(88, 89, 91);
+}
+
+.headerVert {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 195px;
+    /* padding: 10px 20px; */
+    display: grid;
+    grid-template-columns: auto 200px;
+}
+
+.borderRoundR {
+    border-radius: 0% 50% 50% 0%;
+}
+
+.textWhite {
+    color: white;
+}
+
+.textGris {
+    color: rgb(88, 88, 88);
+}
+
+.textXXlarge {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.spanPhoto {
+    margin: 1%;
+    display: inline-block;
+    border-radius: 50%;
+    border: solid 5px;
+    border-color: rgb(175, 174, 174);
+    width: 154px;
+    height: 90%;
+    background-image: url(./Img/photoCV.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contactContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.contact {
+    margin: 5px 0px;
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    column-gap: 10px;
+}
+
+.centerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    width: 100%;
+    height: 600px;
+}
+
+.divGauche {
+    padding-top: 50px;
+    border-top-right-radius: 60px;
+}
+
+.headerDivGauche {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 15px;
+    padding-left: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.textProfil {
+    margin: 10px 10px 10px 10px;
+}
+
+.savoirs {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.foramtions {
+    margin: 10px;
+}
+
+.foramtions>div {
+    margin-bottom: 10px;
+}
+
+.languesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.languesContainer>div {}

@@ -73,6 +73,10 @@ p {
 .presentation {
     text-align: center;
     color: #669cff;
+  /* centre l'image et la met bien sur tous les écrans*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
 }
@@ -82,12 +86,11 @@ p {
     margin: 15px;
     
 }
-.card-text {
-    text-align: initial;
+
+.h5, h5 {
+    font-size: 2.25rem;
+    text-align: center;
 }
-
-
-
 
 /*personaliser la taille des logo dans Project en 3 point */
 
@@ -207,32 +210,13 @@ p {
     height: auto;
 }
 
-/*prix*/
-
-.prix {
-    text-align: center;
-    padding: 20px;
-}
-
-/*bouton des prix */
-
-.btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
-    margin: 30px;
-}
-
-.container-prix {
-    margin: 30px;
-}
-
 /*footer*/
 
 .container-texte {
     text-align: center;
     background: #f7f7f7;
     padding: 10px;
-    ;
+    
 }
 
 .teste {
@@ -240,3 +224,12 @@ p {
     text-align: center;
 }
 
+.w-100 {
+    padding: 60px;
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+    margin: 12px;
+    margin: 20px 0px auto;
+}

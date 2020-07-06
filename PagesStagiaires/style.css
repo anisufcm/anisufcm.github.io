@@ -77,6 +77,18 @@ p {
 
 }
 
+/*personnaliser les card*/
+.card{
+    margin: 15px;
+    
+}
+.card-text {
+    text-align: initial;
+}
+
+
+
+
 /*personaliser la taille des logo dans Project en 3 point */
 
 
@@ -179,7 +191,7 @@ p {
 /*texte card */
 
 .card-text {
-    text-align: center;
+    text-align: initial;
 }
 
 /*taille image card */
@@ -227,3 +239,4 @@ p {
     margin: 10px;
     text-align: center;
 }
+

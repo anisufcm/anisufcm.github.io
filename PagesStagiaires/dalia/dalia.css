@@ -1,0 +1,42 @@
+body {
+    min-height: 100vh;
+    background-image: url(imagesd/feuilles3.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    background-size:   cover ;
+    background-position: left top;
+    height: 100%;
+}
+
+.header {
+   
+    text-align: center;
+    width: 90%;
+    padding: 15% 2% 0;
+
+}
+h1{
+    font-size: 20px;
+}
+p{
+    font-size: 14px;
+}
+.wrapper {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper  div{
+    display: inline-block;
+    float: left;
+    max-width: 48%;
+    border: 2px solid white;
+    margin: 1%;
+}
+
+@media (max-width : 600px) {
+    .wrapper  div {
+        max-width: 80%;
+    }
+}

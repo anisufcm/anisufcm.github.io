@@ -215,6 +215,27 @@ p {
     box-shadow: 5px 7px 10px #59595966;
 }
 
+/*annimation photo*/
 
+.card-img-top1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+   
+  }
 
+  .slidein {
+    animation-duration: 3s;
+    animation-name: slidein;
+   
+  }
   
+  @keyframes slidein {
+    from {
+      margin-left:500%;
+      
+    }
+    to {
+      margin-left:0%;
+      
+    }
+  }

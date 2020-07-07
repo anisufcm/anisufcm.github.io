@@ -1,0 +1,36 @@
+.imagecontribution{
+    float: right;
+  }
+  #navbarSupportedContent{
+      background-color: rgb(156, 181, 228);
+  }
+  h1{
+  color: rgb(156, 181, 228);
+  text-align: center;
+  
+  }
+  
+  .textDiv{
+      margin-left: 20%;
+      margin-right: 20%;
+  }
+  .DivImages{
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+  
+  }
+  .divImg1{
+      margin-right: 30px;
+  }
+  .textRouge{
+      color: red;
+      font-weight: bold;
+  }
+  .listeRouge{
+color: rgb(226, 85, 85);
+  }
+  hh7{
+font-weight: bold;
+font: size 400;
+  }

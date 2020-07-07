@@ -1,0 +1,29 @@
+body {
+    width: 100%;
+}
+
+.page {
+
+    background-color: rgb(93, 77, 55);
+    color : rgb(184, 165, 126);
+    height: auto;
+}
+
+p { color: white;}
+
+.row {
+    padding: 2.5%;
+    text-align: center;
+}
+
+.test {
+
+    font-size: 16px;
+    height: auto;
+    padding: 20px;
+    border: 2px rgb(161, 135, 99) solid;
+}
+
+.test:hover {
+    border: 2px solid rgb(255, 145, 0);
+}

@@ -1960,6 +1960,9 @@ input, select, textarea {
 			ul.contact li:hover {
 				top: -5px;
 			}
+			ul.contact li:hover a.fa-google {
+				background-color: #8a3729;
+			}
 
 				ul.contact li:hover a.fa-facebook {
 					background-color: #3C5A98;
@@ -1969,11 +1972,11 @@ input, select, textarea {
 					background-color: #2DAAE4;
 				}
 
-				ul.contact li:hover a.fa-dribbble {
-					background-color: #C4376B;
+				ul.contact li:hover a.fa-github {
+					background-color: #332f31;
 				}
 
-				ul.contact li:hover a.fa-linkedin {
+				ul.contact li:hover a.fa-linkedin-in {
 					background-color: #006599;
 				}
 

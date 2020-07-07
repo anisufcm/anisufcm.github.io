@@ -17,37 +17,39 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light " >
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light " >
   
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="../../index.html">accueil</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="emotion.html">Introduction générale <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="problematique.html">Problématiques et objectifs</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="modelisation.html">Modélisation des émotion</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="reconnaissance.html">Reconnaissance des émotion</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="echange.html">Echange émotionnel</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="conclusion.html">Conclusion et perspectives</a>
-      </li> 
-
-    </ul>
-    
-  </div>
-</nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ">
+        <li class="nav-item ">
+          <a class="nav-link " href="../../index.html"><span class="textWhite">accueil</span>  </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="emotion.html"><span class="textWhite">Introduction générale</span> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="problematique.html"><span class="textWhite">Problématiques et objectifs</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="modelisation.html"><span class="textWhite">Modélisation des émotion</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reconnaissance.html"><span class="textWhite">Reconnaissance des émotion</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="echange.html"><span class="textWhite">Echange émotionnel</span></a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="conclusion.html"><span class="textWhite">Conclusion et perspectives</span></a>
+        </li> 
+  
+      </ul>
+      
+    </div>
+  </nav>
+  
 
 
 
@@ -64,15 +66,72 @@
 
 
 <div class="textDiv">
-
+  <br>
 <br>
+L'étude bibliographique des travaux concernant la modélisation et l'annotation
+des états émotionnels, nous a permis de montrer que le problème d'échange d'émotions
+ entre applications n'est pas suffisamment traité et qu'il n'existe pas de modèle
+formel de représentation des émotions. En effet, les langages {EMMA, EARL, EmotionML} proposés dans la littérature
+ présentent des limites pour la représentation, l'analyse et l'annotation des émotions.<br>
+ Le langage EMMA est utilisé comme une norme d'échange de données entre les
+composants du système multimodale. Mais il ne standardise pas la représentation
+des données entrantes d'interprétations des utilisateurs. En effet, il permet seulement
+l'annotation de différentes données entrantes des utilisateurs, mais ne permet pas
+de définir les notions annotées. C'est un langage générique pour l'annotation des
+données. Ce langage est aussi monodispositif et plus orienté vers les entrées que
+vers les sorties [Rouillard 2008].<br>
+EARL et EmotionML quant à eux, permettent la représentation et l'échange
+des états émotionnels, mais ils ne sont pas encore standardisés et n'expriment pas
+les nuances sémantiques et pragmatiques des émotions. En fait, ces deux langages
+d'annotation des émotions ne permettent pas d'identifier les qualités sémantiques des
+données émotionnelles et par conséquent, il ne permettent pas l'échange du concept
+émotionnel entre applications. Ils utilisent le dictionnaire de langues naturelles pour
+la définition des émotions. Par exemple, le mot joie avec EARL ou EmotionML va
+être interprété comme une chaîne de caractères {j, o, y } et pas comme un concept
+qui peut être traduit en plusieurs langages, joie en français, farah en arabe, gioia
+en italien, etc.<br>
 
-<center><img src="imgImen/en-cours-de-construction.jpg" height="250px"></center>
+
+
+
+
+
+</div >
+<div class="textDiv"><br>
+  <br>
+  <h4>Contribution 4 :<span class="textRouge"> Système d’échange entre applications multimodales</span></h4>
+  <br>
+  nous présentons un modèle générique pour la représentation
+  et l'échange des émotions entre applications multimodales. Il s'agit d'un modèle de
+  représentation hiérarchique composé de trois couches, comme le montre la figure suivante : la couche psychologique, la couche formelle de représentation et de traitement
+  des émotions et la couche langage.<br>
+  <center><img src="imgImen/threeLayer.png" height="250px"></center>
+<br>
+La première couche (la couche psychologique) représente le modèle psychologique que
+nous avons adopté pour décrire les émotions . Il s'agit de la théorie de Plutchik, définie par le circumplex
+ qui est un modèle multidimensionnel basé sur des émotions
+primaires de base dont vont dériver des émotions secondaires. La seconde couche est
+un modèle formel multidimensionnel qui correspond à l'approche psychologique de
+la première couche : chaque émotion est représentée par un vecteur dans un espace
+8-dimensions où chaque axe représente une émotion de base tels que défini par Plutchik. 
+Cette approche multidimensionnelle se base sur la représentation algébrique
+des émotions dans un espace vectoriel. L'idée de base consiste à représenter une
+émotion par un vecteur dans un espace approprié, puis à lui appliquer toute une
+gamme de traitements algébriques. Cela nous a permis de représenter une infinité
+d'émotions et de proposer des outils mathématiques très performants pour l'analyse
+et le traitement de ces émotions comme l'addition, la projection la décomposition,
+etc. Enfin, la dernière couche qui est la couche langage, basée sur les descriptions
+XML des données émotionnelle finales ce qui permet de faciliter le transfert entre
+les applications. Notre proposition facilite l'échange inter-systèmes. Elle permet le
+transfert efficace de l'information émotionnelle entre applications hétérogènes, 
+indépendamment des modalités et des capteurs utilisés pour la détection.<br>
+<center><img src="imgImen/globale.png" height="250px"></center>
+<br>
+a suivre...
 
 </div>
-
-
-  
+<br>
+<center><img src="imgImen/construc.png" height="250px"></center>
    
 </body>
 </html>

@@ -17,37 +17,39 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light " >
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light " >
   
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="../../index.html">accueil</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="emotion.html">Introduction générale <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="problematique.html">Problématiques et objectifs</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="modelisation.html">Modélisation des émotion</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="reconnaissance.html">Reconnaissance des émotion</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="echange.html">Echange émotionnel</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="conclusion.html">Conclusion et perspectives</a>
-      </li> 
-
-    </ul>
-    
-  </div>
-</nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ">
+        <li class="nav-item ">
+          <a class="nav-link " href="../../index.html"><span class="textWhite">accueil</span>  </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="emotion.html"><span class="textWhite">Introduction générale</span> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="problematique.html"><span class="textWhite">Problématiques et objectifs</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="modelisation.html"><span class="textWhite">Modélisation des émotion</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="reconnaissance.html"><span class="textWhite">Reconnaissance des émotion</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="echange.html"><span class="textWhite">Echange émotionnel</span></a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="conclusion.html"><span class="textWhite">Conclusion et perspectives</span></a>
+        </li> 
+  
+      </ul>
+      
+    </div>
+  </nav>
+  
 
 
 
@@ -66,12 +68,131 @@
 <div class="textDiv">
 
 <br>
+<h4>Principe de Picard</h4>
+L'acquisition de données émotionnelles peut se faire à l'aide de plusieurs instruments
+de captation des émotions : microphones, caméras, capteur de réponse épidermique,
+moniteur de rythme cardiaque, capteur de pression, etc. La reconnaissance des émotions, 
+a pour but de déceler l'émotion exprimée voire ressentie chez un utilisateur
+humain afin de prendre en compte cet état émotionnel. Picard propose dès 1997 une
+série d'étapes à suivre pour effectuer une reconnaissance affective <span class="textRouge">[Picard 1997]</span>. ces étapes sont illustrés dans 
+la figure suivante.<br><br><br>
+<center><img src="imgImen/reconnaissance.png" height="250px" weight="100px"></center><br>
+La figure suivante illustre le principe générale de la reconnaissance des émotions.<br>
+<center><img src="imgImen/principereconnaissance.png" height="250px"></center>
 
-<center><img src="imgImen/en-cours-de-construction.jpg" height="200px"></center>
+
 
 </div>
 
 
+<div class="textDiv" ><br>
+<br>
+  <h4>Contribution 2 :<span class="textRouge"> approche monomodale de reconnaissance des émotions basée sur les signaux physiologiques</span></h4>
+  <br>
+
+
+    <br>
+    <h5>Acquisition des données</h5><br>
+
+      Dans notre travail nous allons travailler sur la Reconnaissance des émotions à partir des signaux physiologiques. 
+      nous avons utilisé les signaux physiologiques fournis par
+    MIT (Massachusetts Institute of Technology) utilisés par J.Healey dans sa thèse
+    [Healey 2000]. Les données de MIT ont été recueillis par 4 capteurs :
+    <ul>
+      <li>la résistance de la peau (GSR)</li>
+      <li>la respiration</li>
+      <li>la pression sanguine (BVP)</li>
+      <li>le signal eléctromyographie (EMG), auxquels s'ajoute le rythme cardiaque
+        déduit des variations de pression sanguine.</li>
+    </ul>
+    Ils ont utilisé la méthode d'un seul participant pendant plusieurs jours pour la
+    collecte des données. Le participant était un acteur qui a exprimé huit émotions
+    différentes à l'aide d'un système développé par Clynes [Clynes 1982]. L'acteur n'exprime pas 
+    seulement chaque émotion de l'extérieur, mais il doit vivre la situation de
+    chaque émotion de l'interne.<br>
+    Les données collectées représentent 25 minutes d'enregistrement par jour, sur une
+    période de 20 jours. Chaque jour contient 4 signaux correspondant aux 4 modalités
+    citées ci-dessus, représentant les 8 émotions basiques à identifier (aucune émotion,
+    colère, haine, peine, amour platonique, amour romantique, joie et vénération). La
+    numérisation des signaux obtenus a été effectuée avec un échantillonnage de 20
+    échantillons par seconde. Chaque signal est donc formé par 30.000 échantillons.<br>
+    La procédure de Clynes consiste à enregistrer les tensions ressenties par le candidat au fur 
+    et à mesure qu'il écoute une musique ou regarde des photos favorisant
+    l'émergence d'une expression émotionnelle spécifique (Les cycles sensibles). Le participant
+     doit appuyer sur un bouton (sentograph) avec une force comparable à la
+    tension ressentie. Plus il ressent de tension, plus il appuie avec force, et vice-versa.<br>
+    La procédure de Clynes incite le sujet à exprimer la même émotion pendant 3 minutes. 
+    Pendant la procédure de génération des émotions, l'acteur doit donner son
+    interprétation de chaque émotion et choisir des photos en liaison avec chaque émotion.
+     Le tableau suivant montre l'ensemble des images utilisées pour provoquer les
+    huit émotions ainsi qu'une description de ces états émotionnels.<br>
+    
+ 
+</div>
+<div class="textDiv" ><br>
+  <h5>Schéma général de la méthode proposée</h5><br>
+  La méthode de détection d'émotions que nous proposons est composée de deux étapes principales. La première étape, appelée
+  "Apprentissage", est une étape "offine" qui prend en entrée pour chacune des différentes modalités :
+   le signal physiologique et l'information émotionnelle et donne
+  en sortie la base émotionnelle relative à cette modalité. Elle permet, à partir d'un
+  signal physiologique dont les émotions correspondantes sont connues, de trouver
+  et d'extraire les formes caractéristiques typiques pour chacune des émotions. Nous
+  utilisons ces formes pour générer des vecteurs caractéristiques que nous regroupons ensemble pour former une base émotionnelle d'apprentissage.
+
+  <center><img src="imgImen/shemaMethode.png" height="250px"></center>
+<br>
+
+  La deuxième étape, appelée détection, est une étape "online". Elle prend en
+  entrée la base émotionnelle d'apprentissage créée à l'étape précédente et un signal
+  physiologique dont les émotions sont inconnues. Elle analyse ensuite en temps réel ces
+  signaux physiologiques pour détecter d'éventuelles activités émotionnelles. Lorsque
+  une émotion est détectée, nous isolons la partie du signal correspondante et nous
+  calculons son vecteur caractéristique. Nous cherchons ensuite dans la base d'apprentissage,
+   l'émotion la plus proche en appliquant l'algorithme de calcul de distance
+  euclidienne.
+  <br>
+<ol>
+  <br>
+  <h6 class="sousTitre"> <li>Apprentissage</li></h6><br>
+
+  La première étape de la méthode de détection proposée, est l'étape d'apprentissage. 
+  Le but de cette étape est la génération d'une base émotionnelle formée par les
+  vecteurs caractéristiques de chaque émotion. Ces vecteurs sont regroupés par modalité. 
+  La génération de ces vecteurs est effectuée en suivant les différentes étapes
+  données par la Figure suivante et qui sont :<br>
+  <center><img src="imgImen/apprentissage.png" height="250px"></center>
+<br>
+  <span class="textRouge">Le découpage</span> : cette étape permet de découper le signal d'entrée représentant les huit
+  émotions afin d'isoler une émotion donnée.
+  <span class="textRouge"><br>
+    Le lissage</span> : Cette étape est importante car elle permet de débruiter le signal d'entrée.
+   Ceci rend les traitements qui suivent beaucoup plus efficaces.<br>
+   <span class="textRouge"> Détection des pics </span>: Elle permet de détecter les activités émotionnelles dans le
+  signal et d'isoler les parties correspondantes.<br>
+  <span class="textRouge">Extraction des caractéristiques</span> : Elle génère un vecteur caractéristique décrivant la partie du signal
+   extrait précédemment.<br>
+  Nous détaillons dans la suite chacune de ces différentes étapes en commençant tout
+  d'abord par le découpage.<br><br>
+  
+
+  <h6 class="sousTitre"> <li>Détection</li></h6>
+</ol>
+</div>
+
+<div class="textDiv" >
+<br>
+  <h4>Contribution 3 :<span class="textRouge"> approche monomodale de reconnaissance des émotions basée sur les signaux physiologiques</span></h4>
+  <br>
+</div>
+
+
+<br>
+
+
+
+
+
+<center><img src="imgImen/en-cours-de-construction.jpg" height="200px"></center>
   
    
 </body>

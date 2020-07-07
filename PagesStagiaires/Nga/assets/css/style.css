@@ -5,3 +5,16 @@
 #profils p {
     padding: 20px;
 }
+.imgExp {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+    vertical-align: middle;
+}
+.lsExperiences {
+    padding-left: 30px;
+}
+#coordonnes p a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -233,3 +233,15 @@ p {
     margin: 12px;
     margin: 20px 0px auto;
 }
+
+/*animation texte*/
+
+.ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }

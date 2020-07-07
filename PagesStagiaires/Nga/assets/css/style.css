@@ -1,0 +1,7 @@
+#profils {
+    background: linear-gradient(olive white);
+    border-radius: 10%;
+}
+#profils p {
+    padding: 20px;
+}

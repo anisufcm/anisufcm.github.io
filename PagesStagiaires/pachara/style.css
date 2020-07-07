@@ -13,6 +13,12 @@ p {
 
 /*Navigation */
 
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+    color: #fff;
+    font-size: 25px;
+}
+
+
 /* couleur bar  nav*/
 .bg-dark {
     background-color: #447ab1 !important;

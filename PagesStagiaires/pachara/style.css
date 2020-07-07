@@ -202,3 +202,19 @@ p {
     right: 0;
     opacity: 0; 
   }
+
+/*Activites*/
+
+.card1{
+    margin: 20px;
+}
+
+.card-img-top1 {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 5px 7px 10px #59595966;
+}
+
+
+
+  

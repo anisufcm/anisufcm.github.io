@@ -77,3 +77,7 @@ anime.timeline({loop: true})
     delay: 500
   });
 
+
+  /*remonter la plage*/
+  
+ 

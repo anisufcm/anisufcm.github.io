@@ -82,6 +82,7 @@ body {
 .divGauche {
     padding-top: 50px;
     border-top-right-radius: 60px;
+    min-width: 300px;
 }
 
 .headerDivGauche {
@@ -153,16 +154,12 @@ body {
     margin-top: 10px;
 }
 
-.itemInterets {  
-  
-    /* display: inline-block; */
+.itemInterets {    
     border-radius: 50%;
     border: solid 10px;
     border-color: rgb(73, 192, 178);
     width: 60px;
-    height: 60px;
-    /* background-position: center;
-    background-repeat: no-repeat;    */
+    height: 60px;   
 }
 
 .itemInterets>img{

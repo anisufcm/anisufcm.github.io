@@ -2,7 +2,7 @@ span {
     /* border: solid; */
 }
 
-.chemin {  
+.chemin {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -17,9 +17,11 @@ body {
 .colorVert {
     color: rgb(73, 192, 178);
 }
+
 .colorGris {
     color: rgb(88, 89, 91);
 }
+
 .bgColorVert {
     background-color: rgb(73, 192, 178);
 }
@@ -31,7 +33,7 @@ body {
 .headerVert {
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 195px;
+    height: 200px;
     display: grid;
     grid-template-columns: auto 200px;
 }
@@ -62,8 +64,9 @@ body {
     border-color: rgb(175, 174, 174);
     width: 154px;
     height: 85%;
-    background-image: url(./Img/photoCV.png);
+    background-image: url(./Img/avatar.png);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -107,14 +110,15 @@ body {
 
 .textProfil {
     margin: 10px 10px 10px 10px;
+    font-size: 1.3em;
 }
 
 .savoirs {
     display: grid;
     grid-template-columns: 40% 60%;
     column-gap: 20px;
-    row-gap: 10px;
-    padding: 10px;
+    row-gap: 15px;
+    padding: 10px 10px 10px 20px;
 }
 
 .foramtions {
@@ -141,6 +145,12 @@ body {
     font-weight: bold;
     border-radius: 0px 20px 20px 0px;
     max-width: 400px;
+}
+
+.headerExperienceProContainer {
+    display: grid;
+    grid-template-columns: 220px auto;
+    column-gap: 10px;
 }
 
 .headerExperiencePro {
@@ -175,4 +185,15 @@ body {
 .itemInterets>img {
     width: 50px;
     height: 50px;
+}
+
+.myPopover {
+    color: rgb(88, 89, 91);
+}
+
+.myPopoverContent {
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    border-radius: 20px;
 }

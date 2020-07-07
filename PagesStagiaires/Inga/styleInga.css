@@ -2,6 +2,13 @@ span {
     /* border: solid; */
 }
 
+.chemin {  
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
 body {
     padding: 10px 20px;
 }
@@ -22,7 +29,6 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 195px;
-    /* padding: 10px 20px; */
     display: grid;
     grid-template-columns: auto 200px;
 }
@@ -123,7 +129,6 @@ body {
     text-align: center;
 }
 
-
 .headerDivDroite {
     display: grid;
     grid-template-columns: 40px 1fr;
@@ -131,10 +136,11 @@ body {
     padding-left: 20px;
     font-size: large;
     font-weight: bold;
-    border-radius: 0px 20px 20px 0px;   
+    border-radius: 0px 20px 20px 0px;
     max-width: 400px;
 }
-.headerExperiencePro{
+
+.headerExperiencePro {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgb(206, 206, 206);
@@ -142,27 +148,28 @@ body {
     padding-left: 20px;
     font-size: medium;
     font-weight: bold;
-    border-radius: 0px 30px 30px 0px; 
+    border-radius: 0px 30px 30px 0px;
     width: 200px;
 }
-.interets{
+
+.interets {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 15px;
-    text-align: center;   
-    justify-items: center;   
+    text-align: center;
+    justify-items: center;
     margin-top: 10px;
 }
 
-.itemInterets {    
+.itemInterets {
     border-radius: 50%;
     border: solid 10px;
     border-color: rgb(73, 192, 178);
     width: 60px;
-    height: 60px;   
+    height: 60px;
 }
 
-.itemInterets>img{
+.itemInterets>img {
     width: 50px;
     height: 50px;
 }
